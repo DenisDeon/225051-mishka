@@ -6,40 +6,213 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
 
-  <header>
+  <header class="page-header">
 
-    <div class="main-header">
 
-      <a class="main-header__logo" href="index.html">
+    <div class="page-header__logo">
 
-        <img src="" alt="">
+      <img src="img/logo-mobile.svg" alt="">
 
-      </a>
+      <button class="main-nav__switch" type="button">Открыть меню</button>
 
     </div>
 
+    <nav class="main-nav main-nav--closed ">
+
+
+      <div class="main-nav__wrapper">
+
+        <ul class="main-nav__links">
+
+          <li class="main-nav__link"><a href="">Каталог товаров</a></li>
+
+          <li class="main-nav__link"><a href="">Вязание на заказ</a></li>
+
+          <li class="main-nav__link main-nav__link--active"><a href="">Поиск по сайту</a></li>
+
+          <li class="main-nav__link main-nav__link--basket"><a href="">Корзина: пока пуста</a></li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+
   </header>
 
-  <main>
+
+  <main class="page-main-one">
+
+
+
+    <div class="title">
+
+      <img class="title__image" src="" alt="" width="320" height="280"> </img>
+      <span class="title__main">Милые штуки<br> ручной<br> работы для дома</span>
+
+    </div>
+
+    <div class="features-main clearfix">
+
+      <a class="features-main__link-one" href=""><img src="img/icon-interior.svg" alt=""><span>Предметы<br> интерьера</span></a>
+
+      <a class="features-main__link-two" href=""><span>Детские<br> игрушки</span> <img src="img/icon-toy.svg" alt=""></a>
+
+
+    </div>
+
+
+
+    <div class="container">
+
+      <div class="benefits clearfix">
+
+        <h2 class="topic">Вязаные корзинки</h2>
+        <b class="benefits__col-another">ТОВАР НЕДЕЛИ</b>
+        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+
+
+        <table class="benefits__table">
+          <tr>
+            <td>Цвет:</td>
+            <td class="benefits__left">«Тиффани»/серый</td>
+          </tr>
+
+          <tr>
+            <td>Диаметр:</td>
+            <td class="benefits__left">25 см</td>
+          </tr>
+
+          <tr>
+            <td>Высота:</td>
+            <td class="benefits__left">15 см</td>
+          </tr>
+        </table>
+
+        <img src="img/triple-set-mobile@1x.jpg" alt="" width="260px" height="315px">
+
+        <b class="benefits__color">Цена: 990 руб.</b>
+
+        <button class="btn" type="button">ЗАКАЗАТЬ</button>
+
+      </div>
+
+      <div class="about-us">
+
+        <h2 class="topic">Коротко о нас:</h2>
+
+        <ul class="topic__list">
+
+          <img src="img/icon-feature-1.svg" alt="">
+          <li>Экологически чистые материалы</li>
+          <img src="img/icon-feature-2.svg" alt="">
+          <li>Скандинавский стиль по российской цене</li>
+          <img src="img/icon-feature-3.svg" alt="">
+          <li>Увеличивает лайки на фотографиях</li>
+          <img src="img/icon-feature-4.svg" alt="">
+          <li>Связано вручную с любовью и умилением</li>
+          <img src="img/icon-feature-5.svg" alt="">
+          <li>Поддержка отечественного производителя</li>
+          <img src="img/icon-feature-6.svg" alt="">
+          <li>Поставляется в подарочной упаковке</li>
+
+        </ul>
+
+      </div>
+
+      <div class="reviews">
+
+        <h2 class="topic">Отзывы</h2>
+
+        <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+
+        <b>Анастасия Красильникова</b>
+
+        <span>@misssssiskras</span>
+
+        <button class="reviews__prev" type="button"><img class="reviews__img" src="img/icon-left-arrow.svg" alt=""></button>
+        <button class="reviews__next" type="button"><img class="reviews__img" src="img/icon-right-arrow.svg" alt=""></button>
+
+        <button class="btn" type="button">Написать</button>
+
+      </div>
+
+      <div class="contacts">
+
+        <b>Контакты</b>
+
+        <table class="contacts__table">
+
+          <tr>
+            <td class="contacts__table-right">e-mail:</td>
+            <td class="contacts--lineblue">info@mimimishkashop.ru</td>
+          </tr>
+
+          <tr>
+            <td class="contacts__table-right contacts__table-top">адрес:</td>
+            <td class="contacts__table-top">г. Санкт-Петербург,
+              <br> ул. Большая
+              <br> Конюшенная,
+              <br> д. 19/8, офис 101</td>
+          </tr>
+
+        </table>
+
+      </div>
+
+    </div>
+
+    <div class="contacts__maps">
+
+      <img src="img/map-mobile@1x.jpg" alt="">
+
+    </div>
+
+    <div class="container">
+      <button class="btn" type="button">Напишите нам</button>
+
+    </div>
 
 
 
   </main>
 
-  <footer>
 
-    <div class="socials">
-      <a class="social-vk social-btn" href="">vk</a>
-      <a class="social-fb social-btn" href="">fb</a>
-      <a class="social-inst social-btn" href="">inst</a>
-    </div>
+  <footer class="page-footer">
 
-    <div class="more">
-      <p>Разработано</p>
+    <div class="container">
+
+      <div class="page-footer__wrapper">
+
+        <p class="page-footer__social">
+
+          <span class="social-links">
+
+        <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+
+      </span>
+
+        </p>
+
+        <p class="page-footer__copyright">
+
+          <span>Разработано:</span>
+          <img src="img/logo-htmlacademy.svg" alt="">
+
+        </p>
+
+
+      </div>
+
     </div>
 
   </footer>

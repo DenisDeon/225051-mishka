@@ -1,0 +1,11 @@
+.page-header__logo img {
+  display: block;
+  margin: 22px auto;
+  margin-bottom: 30px;
+}
+.page-header__logo img:hover {
+  opacity: 0.5;
+}
+.page-header__logo img:active {
+  opacity: 0.2;
+}

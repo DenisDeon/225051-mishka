@@ -1,0 +1,27 @@
+
+.title {
+  position: relative;
+}
+.title__image {
+
+  display: inline-block;
+  background-color: #fbfbfb;
+
+  background-size: 320px 285px;
+  background: url("../img/hero-mobile@1x.jpg") no-repeat #fbfbfb;
+  background-position: center;
+}
+
+.title__main {
+
+  position: absolute;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 600;
+
+  top: 45px;
+  left: 50px;
+
+  text-align: center;
+
+}
