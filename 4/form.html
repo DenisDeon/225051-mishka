@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
+  <base href="https://htmlacademy-adaptive.github.io/225051-mishka/4/">
+</head>
+
+<body>
+
+    <header class="page-header">
+
+
+    <div class="page-header__logo">
+
+        <img src="img/logo-mobile.svg" alt="">
+
+        <button class="main-nav__switch" type="button">Открыть меню</button>
+
+    </div>
+
+    <nav class="main-nav main-nav--closed ">
+
+
+        <div class="main-nav__wrapper">
+
+          <ul class="main-nav__links">
+
+            <li class="main-nav__link"><a href="">Каталог товаров</a></li>
+
+            <li class="main-nav__link"><a href="">Вязание на заказ</a></li>
+
+            <li class="main-nav__link main-nav__link--active"><a href="">Поиск по сайту</a></li>
+
+            <li class="main-nav__link main-nav__link--basket"><a href="">Корзина: пока пуста</a></li>
+
+          </ul>
+
+        </div>
+
+    </nav>
+
+
+  </header>
+
+  <main class="page-main-tree">
+
+
+      <div class="catalog-info">
+
+        <h1 class="catalog-info__title">Вязание на заказ</h1>
+
+      </div>
+
+      <div class="container">
+
+      <div class="info">
+
+        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+
+      </div>
+
+      <form class="grid" action="#" method="get">
+
+        <div class="grid__one">
+
+          <b class="grid__coast">тип:</b>
+
+          <input type="radio" name="fea1" id="ch6" checked>
+          <label for="ch6" class="grid-30">Аксессуар для интерьера</label>
+
+          <input type="radio" name="fea1" id="ch7">
+          <label for="ch7" class="grid-30">Детская игрушка</label>
+
+        </div>
+
+        <div class="grid__two">
+
+          <b class="grid__coast">цвет:</b>
+
+          <input type="checkbox" name="fea1" id="ch1" checked>
+          <label for="ch1" class="grid-20">Белый</label>
+
+          <input type="checkbox" name="fea2" id="ch2" checked>
+          <label for="ch2" class="grid-20">Серый</label>
+
+          <input type="checkbox" name="fea2" id="ch3">
+          <label for="ch3" class="grid-20">«Тиффани»</label>
+
+          <input type="checkbox" name="fea2" id="ch4">
+          <label for="ch4" class="grid-20">Черный</label>
+
+          <input type="checkbox" name="fea2" id="ch5">
+          <label for="ch5" class="grid-20">Розовый</label>
+
+          <input type="checkbox" name="fea2" id="ch8">
+          <label for="ch8" class="grid-20">Оранжевый</label>
+
+        </div>
+
+        <div class="grid__tree">
+
+          <b class="grid__coast">ФИО</b>
+
+          <label for="ch9" class="grid-40">Имя:</label>
+          <input type="text" name="fea1" id="ch9" placeholder="Введите ваше имя*" required>
+
+          <label for="ch10" class="grid-40">Фамилия:</label>
+          <input type="text" name="fea2" id="ch10" placeholder="Укажите фамилию*" required>
+
+          <label for="ch11" class="grid-40">Отчество:</label>
+          <input type="text" name="fea2" placeholder="Отчество, если желаете" id="ch11">
+
+
+        </div>
+
+        <div class="grid__four">
+
+          <b class="grid__coast">Тел</b>
+
+          <input type="tel" name="fea1" id="ch12" placeholder="+7 ХХХ ХХ ХХ*" required>
+          <label for="ch12" class="grid-20"></label>
+
+        </div>
+
+        <div class="grid__five">
+
+          <b class="grid__coast">E-mail</b>
+
+          <input type="email" name="fea1" id="ch13" placeholder="Ваш Email*" required>
+          <label for="ch13" class="grid-20"></label>
+
+        </div>
+
+        <div class="grid__six">
+
+          <b class="grid__coast">Доп</b>
+
+          <textarea name="fea1" id="ch14" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <label for="ch14" class="grid-20"></label>
+
+          <span><sup>*</sup>Поля обязательны для заполнения</span>
+
+          <button class="btn btn-grid" type="submit">Отправить заказ</button>
+
+          <div class="mar-bot-class"></div>
+
+        </div>
+
+      </form>
+
+
+    </div>
+
+  </main>
+
+   <footer class="page-footer">
+
+    <div class="container">
+
+      <div class="page-footer__wrapper">
+
+        <p class="page-footer__social">
+
+          <span class="social-links">
+
+        <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+
+      </span>
+
+        </p>
+
+        <p class="page-footer__copyright">
+
+          <span>Разработано:</span>
+          <img src="img/logo-htmlacademy.svg" alt="">
+
+        </p>
+
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
