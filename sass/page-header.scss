@@ -1,0 +1,47 @@
+page-header__logo {
+  position: relative;
+}
+.page-header__logo img {
+  display: block;
+  margin: 0 auto;
+
+
+}
+.page-header {
+
+  padding: 21px 0;
+  border-top: 1px solid #ececec;
+
+}
+.page-header__switch {
+  display: block;
+  background-color: transparent;
+  font-size: 0;
+  background-image: url("../img/icon-menu-open.svg");
+  width: 23px;
+  height: 14px;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 30px;
+  left: 320px;
+
+}
+.page-header__logo img:hover {
+  opacity: 0.5;
+}
+.page-header__logo img:active {
+  opacity: 0.2;
+}
+
+.page-header__search {
+  display: none;
+}
+/*
+@media (min-width: 768px) {
+
+  .page-header__search {
+ display: block;
+}
+}
+*/

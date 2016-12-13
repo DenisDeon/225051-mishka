@@ -1,0 +1,28 @@
+
+.title {
+  position: relative;
+  text-align: center;
+}
+.title__image {
+
+  display: block;
+
+  background: url("../img/hero-mobile@1x.jpg") no-repeat #F9F9F9;
+  background-position: center top;
+  height: 505px;
+
+  border-top: 1px solid #ececec;
+  padding-top: 82px;
+  box-sizing: border-box;
+}
+
+.title__main {
+
+  display: block;
+
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+
+}

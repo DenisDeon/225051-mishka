@@ -7,22 +7,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
 
+
     <div class="page-header__logo">
 
-      <a href=""><img src="#" alt=""></a>
+      <img src="img/logo-mobile.svg" alt="">
 
+      <button class="main-nav__switch" type="button">Открыть меню</button>
 
     </div>
 
     <nav class="main-nav main-nav--closed ">
 
-      <button class="main-nav__switch" type="button">Открыть меню</button>
 
       <div class="main-nav__wrapper">
 
@@ -42,17 +46,19 @@
 
     </nav>
 
+
   </header>
 
   <main class="page-main-tree">
 
+
+    <div class="catalog-info">
+
+      <h1 class="catalog-info__title">Вязание на заказ</h1>
+
+    </div>
+
     <div class="container">
-
-      <div class="catalog-info">
-
-        <h1 class="catalog-info__title">Вязание на заказ</h1>
-
-      </div>
 
       <div class="info">
 
@@ -102,20 +108,21 @@
 
           <b class="grid__coast">ФИО</b>
 
+          <label for="ch9" class="grid-40">Имя:</label>
           <input type="text" name="fea1" id="ch9" placeholder="Введите ваше имя*" required>
-          <label for="ch9" class="grid-20">Имя:</label>
 
+          <label for="ch10" class="grid-40">Фамилия:</label>
           <input type="text" name="fea2" id="ch10" placeholder="Укажите фамилию*" required>
-          <label for="ch10" class="grid-20">Фамилия:</label>
 
+          <label for="ch11" class="grid-40">Отчество:</label>
           <input type="text" name="fea2" placeholder="Отчество, если желаете" id="ch11">
-          <label for="ch11" class="grid-20">Отчество:</label>
+
 
         </div>
 
         <div class="grid__four">
 
-          <b class="grid__coast">Телефон</b>
+          <b class="grid__coast">Тел</b>
 
           <input type="tel" name="fea1" id="ch12" placeholder="+7 ХХХ ХХ ХХ*" required>
           <label for="ch12" class="grid-20"></label>
@@ -142,6 +149,8 @@
 
           <button class="btn btn-grid" type="submit">Отправить заказ</button>
 
+          <div class="mar-bot-class"></div>
+
         </div>
 
       </form>
@@ -153,26 +162,31 @@
 
   <footer class="page-footer">
 
-    <div class="page-footer__wrapper">
+    <div class="container">
 
-      <p class="page-footer__social">
+      <div class="page-footer__wrapper">
 
-        <span class="social-links">
+        <p class="page-footer__social">
 
-        <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <span class="social-links">
+
+        <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+        <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
 
       </span>
 
-      </p>
+        </p>
 
-      <p class="page-footer__copyright">
+        <p class="page-footer__copyright">
 
-        Разработано:
-        <img src="" alt="">
+          <span>Разработано:</span>
+          <img src="img/logo-htmlacademy.svg" alt="">
 
-      </p>
+        </p>
+
+
+      </div>
 
     </div>
 
