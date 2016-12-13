@@ -1,0 +1,29 @@
+.contacts b {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-top: 85px;
+  margin-bottom: 40px;
+}
+.contacts__table td {
+  color: #444444;
+  font-size: 15px;
+  line-height: 30px;
+}
+.contacts__table-right {
+padding-right: 42px;
+  width: 60px;
+  display: block;
+}
+.contacts--lineblue {
+  border-bottom: 1px solid #62d1ba;
+
+}
+.contacts__table-top {
+  padding-top: 40px;
+}
+.contacts__maps {
+  margin-top: 45px;
+  margin-left: 40px;
+}

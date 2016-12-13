@@ -7,22 +7,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
 
   <header class="page-header">
 
+
     <div class="page-header__logo">
 
-      <a href=""><img src="#" alt=""></a>
+      <img src="img/logo-mobile.svg" alt="">
 
+      <button class="main-nav__switch" type="button">Открыть меню</button>
 
     </div>
 
     <nav class="main-nav main-nav--closed ">
 
-      <button class="main-nav__switch" type="button">Открыть меню</button>
 
       <div class="main-nav__wrapper">
 
@@ -42,29 +46,29 @@
 
     </nav>
 
+
   </header>
 
   <main class="page-main-two">
 
+    <div class="catalog-info">
+
+      <h1 class="catalog-info__title">Каталог товаров</h1>
+
+    </div>
     <div class="container">
-
-      <div class="catalog-info">
-
-        <h1 class="catalog-info__title">Каталог товаров</h1>
-
-      </div>
 
       <div class="features">
 
         <div class="features__type">
 
-          <img src="#" alt="">
+          <img src="img/photo-1-mobile@1x.jpg" alt="" width="258px">
 
           <b>Зайчик-попрыгайчик</b>
 
           <span>Рост 30 см, вес 200 г</span>
 
-          <b>1 200 руб.</b>
+          <b class="features__bottom">1 200 руб.</b>
 
         </div>
 
@@ -74,13 +78,13 @@
 
         <div class="features__type">
 
-          <img src="#" alt="">
+          <img src="img/photo-2-mobile@1x.jpg" alt="" width="258px">
 
           <b>Корзинка для белья</b>
 
           <span>Диаметр 15 см, высота 10 см</span>
 
-          <b>690 руб.</b>
+          <b class="features__bottom">690 руб.</b>
 
         </div>
 
@@ -90,13 +94,13 @@
 
         <div class="features__type">
 
-          <img src="#" alt="">
+          <img src="img/photo-3-mobile@1x.jpg" alt="" width="258px">
 
           <b>Большая корзинка для игрушек</b>
 
           <span>Диаметр 30 см, высота 30 см</span>
 
-          <b>1 500 руб.</b>
+          <b class="features__bottom">1 500 руб.</b>
 
         </div>
 
@@ -108,11 +112,12 @@
 
           <h4>Процесс производства</h4>
 
-          <video src=""></video>
+          <img src="img/video-mobile@1x.jpg">
+
 
           <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 
-          <a class="features-video__btn btn">Сделать заказ</a>
+          <a class="btn features-video__btn">Сделать заказ</a>
 
         </div>
 
@@ -124,26 +129,31 @@
 
   <footer class="page-footer">
 
-    <div class="page-footer__wrapper">
+    <div class="container">
 
-      <p class="page-footer__social">
+      <div class="page-footer__wrapper">
 
-        <span class="social-links">
+        <p class="page-footer__social">
 
-        <a class="social-link social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <span class="social-links">
+
+        <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        <a class="social-link social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+        <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
 
       </span>
 
-      </p>
+        </p>
 
-      <p class="page-footer__copyright">
+        <p class="page-footer__copyright">
 
-        Разработано:
-        <img src="" alt="">
+          <span>Разработано:</span>
+          <img src="img/logo-htmlacademy.svg" alt="">
 
-      </p>
+        </p>
+
+
+      </div>
 
     </div>
 

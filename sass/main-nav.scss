@@ -1,0 +1,44 @@
+.main-nav {
+  position: absolute;
+  z-index: 0;
+  background-color: #fff;
+  top: 12%;
+
+}
+
+.main-nav__links {
+  display: block;
+  margin-left: -30px;
+  list-style: none;
+   margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main-nav__link a:hover {
+  opacity: 0.5;
+}
+
+.main-nav__link a:active {
+  opacity: 0.2;
+}
+
+.main-nav__link a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+  padding: 30px 0px 30px 75px;
+  border: 1px solid #ececec;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 235px;
+}
+
+.main-nav__wrapper {
+
+
+}
