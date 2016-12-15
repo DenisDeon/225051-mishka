@@ -2,8 +2,7 @@
   position: absolute;
   z-index: 0;
   background-color: #fff;
-  top: 12%;
-
+  top: 15%;
 }
 
 .main-nav__links {
@@ -37,7 +36,20 @@
   border-bottom: 0;
   width: 235px;
 }
+.main-nav__switch {
+  display: block;
+  background-color: transparent;
+  font-size: 0;
+  background-image: url("../img/icon-menu-open.svg");
+  width: 23px;
+  height: 14px;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: -53px;
+  left: 300px;
 
+}
 .main-nav__wrapper {
 
 

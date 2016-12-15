@@ -13,9 +13,6 @@
 @import "features-video";
 @import "info";
 @import "grid";
-
-
-
 @font-face {
   font-family: "Open Sans";
   src: url(../fonts/opensans.woff) format('woff'), url(../fonts/opensans.woff2) format('woff2');
@@ -28,36 +25,91 @@
   font-weight: 700;
 }
 
+$mobile-widths-only: (max-width: 767px);
+$tablet-widths: (min-width: 768px);
+$desktop-widths: (min-width: 1250px);
 body {
   background: white;
   min-width: 320px;
   min-height: 1000px;
   font-family: "Open Sans", "Arial", sans-serif;
+  margin: 0;
 }
 
 .container {
   width: 320px;
   margin: 0 auto;
+  @media #{$tablet-widths} {
+    width: 668px;
+  }
+  @media #{$desktop-widths} {
+    width: 1050px;
+  }
 }
 
-@media (min-width: 768px) {
-  /*
-  .container {
-  width: 670px;
-  margin: 0 auto;
-  padding: 0 50px;
+.container-fluid {
+  width: auto;
+  @media #{tablet-widths} {
+    width: 87%;
+    /* 640px / 768px ~= 84% */
+    max-width: 1050px;
+    /* 960px / .84 ~= 1142px (центровка начнётся чуть раньше 1200px) */
+    margin: 0 auto;
+  }
 }
-  */
+@media (max-width: 767px) {
+  .page-header__img {
+    display: none;
+}
 }
 
-@media (min-width: 1150px) {
-  /*
-  .container {
-  width: 1050px;
-  margin: 0 auto;
-  padding: 0 50px;
-}
-  */
+@media #{$tablet-widths} {
+  .page-header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto 25px;
+    width: 768px;
+  }
+  .page-header__logo {
+   display: none;
+  }
+  .page-header__img {
+    width: 320px;
+    min-height: 88px;
+    padding-top: 22px;
+
+    margin: 0 0 -50px 0;
+    padding-left: 50px;
+    order: -2;
+    border-top: 0;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .main-nav {
+    display: flex;
+    z-index: 1;
+
+  }
+  .main-nav--closed {
+    display: none;
+  }
+  .main-nav__links-tablet {
+    display: block;
+  }
+  .main-nav--opened-two {
+    order: -1;
+  }
+  .main-nav--opened {
+    order: 0;
+  }
+  .main-nav__switch {
+    display: none;
+  }
+
+
 }
 
 .clearfix:after {
