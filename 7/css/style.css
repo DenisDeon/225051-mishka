@@ -1,12 +1,17 @@
 @charset "UTF-8";
 .page-header__logo {
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
   position: relative; }
 
 .page-header__logo img {
-  display: block;
-  margin: 0 auto; }
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto; }
 
 .page-header {
+  margin: auto;
   width: 320px;
   padding: 21px 0;
   border-top: 1px solid #ececec; }
@@ -20,14 +25,24 @@
 .page-header__search {
   display: none; }
 
-/*
-@media (min-width: 768px) {
+.page-header__title {
+  width: 100%;
+  position: absolute;
+  display: block;
+  left: 0px;
+  top: 80px;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto; }
 
-  .page-header__search {
- display: block;
-}
-}
-*/
+.page-header--index {
+  min-height: 412px;
+  padding: 85px 0px 10px;
+  background: #fafafa url(../img/hero-mobile@1x.jpg) no-repeat;
+  background-position: center top; }
+
 .title {
   width: 100%;
   text-align: center; }
@@ -71,10 +86,10 @@
   text-decoration: none; }
 
 .features-main__link--one {
-  bottom: -125px; }
+  bottom: -323px; }
 
 .features-main__link--two {
-  bottom: -23px; }
+  bottom: -220px; }
 
 .features-main__link:hover {
   background: #59d5bc; }
@@ -92,6 +107,10 @@
   position: absolute;
   top: 20px;
   left: 30px; }
+
+.benefits {
+  padding: 0 30px;
+  margin-top: 330px; }
 
 .benefits__col-another {
   color: #63d1bb; }
@@ -127,7 +146,8 @@
 
 .about-us {
   display: block;
-  margin-top: 70px; }
+  margin-top: 70px;
+  padding: 0 30px; }
 
 .topic__list li {
   list-style: none;
@@ -142,7 +162,8 @@
   margin-left: -40px; }
 
 .reviews {
-  margin-top: 60px; }
+  margin-top: 60px;
+  padding: 0 30px; }
 
 .reviews p {
   color: #444444;
@@ -191,6 +212,9 @@
 .reviews__next:active {
   opacity: 0.4; }
 
+.contacts {
+  padding: 0 30px; }
+
 .contacts b {
   display: block;
   font-size: 18px;
@@ -205,7 +229,7 @@
   line-height: 30px; }
 
 .contacts__table-right {
-  padding-right: 42px;
+  padding-right: 10px;
   width: 60px;
   display: block; }
 
@@ -241,18 +265,18 @@
   width: 22px;
   height: 21px;
   top: 15px;
-  left: 55px; }
+  left: 95px; }
 
 .social-link--fb::after {
   top: 10px;
-  left: 115px;
+  left: 145px;
   background-position: 0px -31px;
   width: 15px;
   height: 28px; }
 
 .social-link--tv::after {
   top: 15px;
-  left: 165px;
+  left: 190px;
   background-position: 0px -69px;
   width: 23px;
   height: 20px; }
@@ -278,19 +302,19 @@
   left: -40px; }
 
 .page-footer__copyright img {
-  margin-left: 30px;
+  margin-left: 25px;
   margin-top: -5px;
   margin-bottom: -13px; }
 
 .page-footer__copyright span {
-  margin-left: 0px;
+  margin-left: 20px;
   padding-top: -20px; }
 
 .main-nav {
   position: absolute;
   z-index: 0;
   background-color: #fff;
-  top: 15%; }
+  top: 80px; }
 
 .main-nav__links {
   display: block;
@@ -309,7 +333,7 @@
   display: block;
   text-decoration: none;
   color: black;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   text-align: left;
@@ -646,10 +670,10 @@ body {
   margin: 0 auto; }
   @media (min-width: 768px) {
     .container {
-      width: 668px; } }
+      width: 768px; } }
   @media (min-width: 1250px) {
     .container {
-      width: 1050px; } }
+      width: 1150px; } }
 
 .container-fluid {
   width: auto; }
@@ -687,8 +711,6 @@ body {
     -ms-flex-order: -2;
         order: -2;
     border-top: 0;
-    -ms-flex-positive: 1;
-        flex-grow: 1;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     text-align: left; }
