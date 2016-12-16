@@ -13,6 +13,7 @@
 @import "features-video";
 @import "info";
 @import "grid";
+
 @font-face {
   font-family: "Open Sans";
   src: url(../fonts/opensans.woff) format('woff'), url(../fonts/opensans.woff2) format('woff2');
@@ -39,11 +40,12 @@ body {
 .container {
   width: 320px;
   margin: 0 auto;
+
   @media #{$tablet-widths} {
-    width: 668px;
+    width: 768px;
   }
   @media #{$desktop-widths} {
-    width: 1050px;
+    width: 1150px;
   }
 }
 
@@ -84,14 +86,12 @@ body {
     padding-left: 50px;
     order: -2;
     border-top: 0;
-    flex-grow: 1;
     flex-wrap: wrap;
     text-align: left;
   }
   .main-nav {
     display: flex;
     z-index: 1;
-
   }
   .main-nav--closed {
     display: none;
@@ -108,8 +108,6 @@ body {
   .main-nav__switch {
     display: none;
   }
-
-
 }
 
 .clearfix:after {
