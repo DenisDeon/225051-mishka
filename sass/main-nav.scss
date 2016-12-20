@@ -1,9 +1,4 @@
-.main-nav {
-  position: absolute;
-  z-index: 0;
-  background-color: #fff;
-  top: 80px;
-}
+
 
 .main-nav__links {
   display: block;
@@ -11,6 +6,9 @@
   list-style: none;
    margin-top: 0;
   margin-bottom: 0;
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
 }
 
 .main-nav__link a:hover {
@@ -49,6 +47,9 @@
   top: -53px;
   left: 300px;
 
+}
+.main-nav--opened-two {
+  top: 220px;
 }
 .main-nav__wrapper {
 

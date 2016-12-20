@@ -9,23 +9,28 @@
   margin-top: 85px;
   margin-bottom: 40px;
 }
-.contacts__table td {
-  color: #444444;
-  font-size: 15px;
-  line-height: 30px;
-}
-.contacts__table-right {
-padding-right: 10px;
-  width: 60px;
-  display: block;
-}
-.contacts--lineblue {
-  border-bottom: 1px solid #62d1ba;
+.contacts-info {
+  margin-bottom: 30px;
+    span {
+      font-size: 15px;
+      line-height: 30px;
+      color: #444444;
+    }
+  }
+.contacts-email__value {
+    text-decoration: none;
+    border-bottom: 1px solid #62d1ba;
+    color: #444444;
+    margin-top: 5px;
+    &:hover{
+      color: #78cec0;
+    }
+  }
 
+.contacts-email__label, .contacts-adress__label {
+  padding-right: 16px;
 }
-.contacts__table-top {
-  padding-top: 40px;
-}
+
 .contacts__maps {
   margin-top: 45px;
   margin-left: 40px;
