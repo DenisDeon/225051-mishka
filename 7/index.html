@@ -21,45 +21,61 @@
 
     </div>
 
-    <div class="page-header__img clearfix">
+    <div class="page-header__img">
 
       <img src="img/mishka-logo-tablet.png" alt="">
 
 
     </div>
 
-    <nav class="main-nav">
+    <div class="page-header__img-desktop">
+
+      <img src="img/mishka-logo-desktop.png" alt="">
 
 
-      <ul class="main-nav__links main-nav--opened">
+    </div>
 
-        <li class="main-nav__link"><a href="">Каталог товаров</a></li>
 
-        <li class="main-nav__link"><a href="">Вязание на заказ</a></li>
+    <ul class="main-nav__links main-nav--opened">
 
-      </ul>
+      <li class="main-nav__link main-nav__link--bottom"><a href="">Каталог товаров</a></li>
 
-      <ul class="main-nav__links main-nav--opened-two">
+      <li class="main-nav__link main-nav__link--bottom"><a href="">Вязание на заказ</a></li>
 
-        <li class="main-nav__link main-nav__link--active"><a href="">Поиск по сайту</a></li>
+    </ul>
 
-        <li class="main-nav__link main-nav__link--basket"><a href="">Корзина: пока пуста</a></li>
+    <ul class="main-nav__links main-nav--opened-two">
 
-        <button class="main-nav__switch" type="button">Открыть меню</button>
+      <li class="main-nav__link main-nav__link--active"><a href="">Поиск по сайту</a></li>
 
-      </ul>
+      <li class="main-nav__link main-nav__link--basket"><a href="">Корзина: пока пуста</a></li>
 
-    </nav>
+      <button class="main-nav__switch" type="button">Открыть меню</button>
+
+    </ul>
+
+    <ul class="main-nav__links main-nav--opened-desktop">
+
+      <li class="main-nav__link"><a href="">Новые поступления</a></li>
+
+      <li class="main-nav__link"><a href="">Распродажа</a></li>
+
+       <div><span>Бесплатная доставка по России</span></div>
+
+    </ul>
+
+
+
 
     <h1 class="page-header__title page-header--index">Милые штуки ручной<br> работы для дома</h1>
 
     <div class="features-main container">
 
-        <a class="features-main__link features-main__link--one" href=""><img src="img/icon-interior.svg" alt=""><span>Предметы<br> интерьера</span></a>
+      <a class="features-main__link features-main__link--one" href=""><img src="img/icon-interior.svg" alt=""><span>Предметы<br> интерьера</span></a>
 
-        <a class="features-main__link features-main__link--two" href=""><span>Детские<br> игрушки</span> <img src="img/icon-toy.svg" alt=""></a>
+      <a class="features-main__link features-main__link--two" href=""><span>Детские<br> игрушки</span> <img src="img/icon-toy.svg" alt=""></a>
 
-      </div>
+    </div>
 
   </header>
 
@@ -83,33 +99,40 @@
 
       <div class="benefits clearfix">
 
-        <h2 class="topic">Вязаные корзинки</h2>
-        <b class="benefits__col-another">ТОВАР НЕДЕЛИ</b>
-        <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+        <div class="benefits__title">
+          <h2 class="topic">Вязаные корзинки</h2>
+          <b class="benefits__col-another">ТОВАР НЕДЕЛИ</b>
+        </div>
 
+        <div class="benefits__info">
+          <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
 
-        <table class="benefits__table">
-          <tr>
-            <td>Цвет:</td>
-            <td class="benefits__left">«Тиффани»/серый</td>
-          </tr>
+          <table class="benefits__table">
+            <tr>
+              <td>Цвет:</td>
+              <td class="benefits__left">«Тиффани»/серый</td>
+            </tr>
 
-          <tr>
-            <td>Диаметр:</td>
-            <td class="benefits__left">25 см</td>
-          </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td class="benefits__left">25 см</td>
+            </tr>
 
-          <tr>
-            <td>Высота:</td>
-            <td class="benefits__left">15 см</td>
-          </tr>
-        </table>
+            <tr>
+              <td>Высота:</td>
+              <td class="benefits__left">15 см</td>
+            </tr>
+          </table>
+        </div>
 
-        <img src="img/triple-set-mobile@1x.jpg" alt="" width="260px" height="315px">
-
+        <div class="benefits__picture">
+          <img class="benefits__picture--mobule" src="img/triple-set-mobile@1x.jpg" alt="" width="260px" height="315px">
+          <img class="benefits__picture--tablet" src="img/triple-set-mobile@2x.jpg" alt="" width="334px" height="404px">
+          <img class="benefits__picture--desktop" src="img/triple-set-desktop.jpg" alt="" width="525px" height="636px">
+        </div>
         <b class="benefits__color">Цена: 990 руб.</b>
 
-        <button class="btn" type="button">ЗАКАЗАТЬ</button>
+        <a class="benefits__btn--tablet btn" type="button">ЗАКАЗАТЬ</a>
 
       </div>
 
@@ -117,20 +140,37 @@
 
         <h2 class="topic">Коротко о нас:</h2>
 
-        <ul class="topic__list">
+        <ul class="about-us__list">
 
-          <img src="img/icon-feature-1.svg" alt="">
-          <li>Экологически чистые материалы</li>
-          <img src="img/icon-feature-2.svg" alt="">
-          <li>Скандинавский стиль по российской цене</li>
-          <img src="img/icon-feature-3.svg" alt="">
-          <li>Увеличивает лайки на фотографиях</li>
-          <img src="img/icon-feature-4.svg" alt="">
-          <li>Связано вручную с любовью и умилением</li>
-          <img src="img/icon-feature-5.svg" alt="">
-          <li>Поддержка отечественного производителя</li>
-          <img src="img/icon-feature-6.svg" alt="">
-          <li>Поставляется в подарочной упаковке</li>
+          <li class="about-us__item">
+            <img class="about-us__item-image" src="img/icon-feature-1.svg" alt="">
+            <span>Экологически чистые материалы</span>
+          </li>
+
+          <li class="about-us__item">
+            <img class="about-us__item-image" src="img/icon-feature-3.svg" alt="">
+            <span>Скандинавский стиль по российской цене</span>
+          </li>
+
+          <li class="about-us__item">
+            <img class="about-us__item-image" src="img/icon-feature-5.svg" alt="">
+            <span>Увеличивает лайки на фотографиях</span>
+          </li>
+
+          <li class="about-us__item">
+            <img class="about-us__item-image" src="img/icon-feature-2.svg" alt="">
+            <span>Связано вручную с любовью и умилением</span>
+          </li>
+
+          <li class="about-us__item">
+            <img class="about-us__item-image" src="img/icon-feature-4.svg" alt="">
+            <span>Поддержка отечественного производителя</span>
+          </li>
+
+          <li class="about-us__item">
+            <img class="about-us__item-image" src="img/icon-feature-6.svg" alt="">
+            <span>Поставляется в подарочной упаковке</span>
+          </li>
 
         </ul>
 
@@ -142,14 +182,18 @@
 
         <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 
-        <b>Анастасия Красильникова</b>
+        <div class="reviews__info">
+          <b>Анастасия Красильникова</b>
 
-        <span>@misssssiskras</span>
+          <span>@misssssiskras</span>
+        </div>
 
-        <button class="reviews__prev" type="button"><img class="reviews__img" src="img/icon-left-arrow.svg" alt=""></button>
-        <button class="reviews__next" type="button"><img class="reviews__img" src="img/icon-right-arrow.svg" alt=""></button>
+        <div class="reviews__btn-left-right">
+          <button class="reviews__prev" type="button"><img class="reviews__img" src="img/icon-left-arrow.svg" alt=""></button>
+          <button class="reviews__next" type="button"><img class="reviews__img" src="img/icon-right-arrow.svg" alt=""></button>
+        </div>
 
-        <button class="btn" type="button">Написать</button>
+        <button class="reviews__btn btn" type="button">Написать</button>
 
       </div>
 
@@ -157,22 +201,26 @@
 
         <b>Контакты</b>
 
-        <table class="contacts__table">
+        <div class="contacts-info">
 
-          <tr>
-            <td class="contacts__table-right">e-mail:</td>
-            <td class="contacts--lineblue">info@mimimishkashop.ru</td>
-          </tr>
+          <div class="contacts-email">
+            <span class="contacts-email__label">e-mail:</span>
+            <a class="contacts-email__value" href="#">info@mimimishkashop.ru</a>
+          </div>
 
-          <tr>
-            <td class="contacts__table-right contacts__table-top">адрес:</td>
-            <td class="contacts__table-top">г. Санкт-Петербург,
-              <br> ул. Большая
-              <br> Конюшенная,
-              <br> д. 19/8, офис 101</td>
-          </tr>
+          <div class="contacts-adress">
+            <span class="contacts-adress__label">адрес:</span>
+            <span class="contacts-adress__value">г. Санкт-Петербург,
+                <br> ул. Большая
+                Конюшенная,
+                <br> д. 19/8, офис 101</span>
+          </div>
 
-        </table>
+        </div>
+
+        <div class="contacts__maps-desktop">
+          <img src="img/map-desktop.jpg" alt="" width="525px" height="428px">
+        </div>
 
       </div>
 
@@ -180,16 +228,14 @@
 
     <div class="contacts__maps container">
 
-      <img src="img/map-mobile@1x.jpg" alt="">
-
+      <img class="contacts__maps-mobile"  src="img/map-mobile@1x.jpg" alt="">
+      <img class="contacts__maps-tablet" src="img/map-tablet.jpg" alt="">
     </div>
 
     <div class="container">
-      <button class="btn container" type="button">Напишите нам</button>
+      <button class="btn__tablet btn container" type="button">Напишите нам</button>
 
     </div>
-
-
 
   </main>
 
@@ -198,31 +244,31 @@
 
     <div class="container">
 
-      <div class="page-footer__wrapper">
+      <div class="page-footer__tablet">
+       <a class="page-footer__logo" href=""><img src="img/logo-footer.png" alt=""></a>
 
-        <p class="page-footer__social">
+        <div class="page-footer__social">
 
-          <span class="social-links">
+      <div class="social-links">
 
         <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
         <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
         <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
 
-      </span>
+      </div>
 
-        </p>
+        </div>
 
-        <p class="page-footer__copyright">
+        <div class="page-footer__copyright">
 
           <span>Разработано:</span>
           <img src="img/logo-htmlacademy.svg" alt="">
 
-        </p>
+        </div>
 
 
       </div>
-
-    </div>
+      </div>
 
   </footer>
 
