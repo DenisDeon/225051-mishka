@@ -1,18 +1,24 @@
 .about-us {
   display: block;
   margin-top: 70px;
+  padding: 0 30px;
 }
-.topic__list li {
+.about-us__list {
+  position: relative;
+
+}
+.about-us__item-image {
+  position: absolute;
+}
+.about-us__list li {
  list-style: none;
   margin-left: -40px;
   font-size: 17px;
   font-weight: 600;
   line-height: 20px;
-
+  margin-top: 85px;
 }
-.topic__list img {
-  margin-top: 30px;
+.about-us__list img {
+  margin-top: -50px;
   margin-bottom: 20px;
-  margin-left: -40px;
-
 }
