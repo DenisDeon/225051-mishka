@@ -16,36 +16,57 @@
 
   <header class="page-header">
 
-
     <div class="page-header__logo">
 
       <img src="img/logo-mobile.svg" alt="">
 
-      <button class="main-nav__switch" type="button">Открыть меню</button>
+    </div>
+
+    <div class="page-header__img">
+
+      <img src="img/mishka-logo-tablet.png" alt="">
+
 
     </div>
 
-    <nav class="main-nav main-nav--closed ">
+    <div class="page-header__img-desktop">
+
+      <img src="img/mishka-logo-desktop.png" alt="">
 
 
-      <div class="main-nav__wrapper">
+    </div>
 
-        <ul class="main-nav__links">
 
-          <li class="main-nav__link"><a href="">Каталог товаров</a></li>
+    <ul class="main-nav__links main-nav--opened">
 
-          <li class="main-nav__link"><a href="">Вязание на заказ</a></li>
+      <li class="main-nav__link main-nav__link--bottom"><a href="">Каталог товаров</a></li>
 
-          <li class="main-nav__link main-nav__link--active"><a href="">Поиск по сайту</a></li>
+      <li class="main-nav__link main-nav__link--bottom"><a href="">Вязание на заказ</a></li>
 
-          <li class="main-nav__link main-nav__link--basket"><a href="">Корзина: пока пуста</a></li>
+      <div><span class="main-nav--closed-desktop">Бесплатная доставка по России</span></div>
 
-        </ul>
 
-      </div>
+    </ul>
 
-    </nav>
+    <ul class="main-nav__links main-nav--opened-two">
 
+      <li class="main-nav__link main-nav__link--active"><a href="">Поиск по сайту</a></li>
+
+      <li class="main-nav__link main-nav__link--basket"><a href="">Корзина: пока пуста</a></li>
+
+      <button class="main-nav__switch" type="button">Открыть меню</button>
+
+    </ul>
+
+    <ul class="main-nav__links main-nav--opened-desktop">
+
+      <li class="main-nav__link"><a href="">Новые поступления</a></li>
+
+      <li class="main-nav__link"><a href="">Распродажа</a></li>
+
+      <div><span>Бесплатная доставка по России</span></div>
+
+    </ul>
 
   </header>
 
@@ -56,70 +77,111 @@
       <h1 class="catalog-info__title">Каталог товаров</h1>
 
     </div>
+
     <div class="container">
 
-      <div class="features">
+      <div class="features-catalog">
 
-        <div class="features__type">
+        <div class="features">
 
-          <img src="img/photo-1-mobile@1x.jpg" alt="" width="258px">
 
-          <b>Зайчик-попрыгайчик</b>
 
-          <span>Рост 30 см, вес 200 г</span>
+          <a href="features__link">
+            <img class="features__img-mobile" src="img/photo-1-mobile@1x.jpg" alt="" width="258px" height="196">
+            <img class="features__img-tablet" src="img/photo-1-tablet.jpg" alt="" width="334px" height="334px">
+            <img class="features__img-desktop" src="img/photo-1-desktop.jpg" alt="">
+          </a>
 
-          <b class="features__bottom">1 200 руб.</b>
+          <div class="features__data">
 
-        </div>
+             <h1>
+              <a href="">Зайчик-попрыгайчик</a>
+            </h1>
 
-      </div>
 
-      <div class="features">
+            <div class="features__params">Рост 30 см, вес 200 г</div>
 
-        <div class="features__type">
+            <div class="features__actions">
+              <div class="features__price features__price--mod">1 200 руб.</div>
+              <a class="features__buy-btn" href=""></a>
+              <svg></svg>
+            </div>
 
-          <img src="img/photo-2-mobile@1x.jpg" alt="" width="258px">
-
-          <b>Корзинка для белья</b>
-
-          <span>Диаметр 15 см, высота 10 см</span>
-
-          <b class="features__bottom">690 руб.</b>
-
-        </div>
-
-      </div>
-
-      <div class="features">
-
-        <div class="features__type">
-
-          <img src="img/photo-3-mobile@1x.jpg" alt="" width="258px">
-
-          <b>Большая корзинка для игрушек</b>
-
-          <span>Диаметр 30 см, высота 30 см</span>
-
-          <b class="features__bottom">1 500 руб.</b>
+          </div>
 
         </div>
 
+        <div class="features">
+
+
+
+          <a href="features__link">
+            <img class="features__img-mobile" src="img/photo-2-mobile@1x.jpg" alt="" width="258px">
+            <img class="features__img-tablet" src="img/photo-2-tablet.jpg" alt="">
+            <img class="features__img-desktop" src="img/photo-2-desktop.jpg" alt="">
+          </a>
+
+          <div class="features__data">
+            <h1>
+              <a href="">Корзинка для белья</a>
+            </h1>
+
+
+            <div class="features__params">Диаметр 15 см, высота 10 см</div>
+
+            <div class="features__actions">
+              <div class="features__price">690 руб.</div>
+              <a class="features__buy-btn" href=""></a>
+              <svg></svg>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="features">
+
+          <a href="features__link">
+            <img class="features__img-mobile" src="img/photo-3-mobile@1x.jpg" alt="" width="258px">
+            <img class="features__img-tablet" src="img/photo-3-tablet.jpg" alt="">
+            <img class="features__img-desktop" src="img/photo-3-desktop.jpg" alt="">
+          </a>
+
+          <div class="features__data">
+            <h1>
+              <a href="">Большая корзинка для игрушек</a>
+            </h1>
+
+
+            <div class="features__params features__params--mod">Диаметр 30 см, высота 30 см
+            </div>
+
+            <div class="features__actions">
+              <div class="features__price">1 500 руб.</div>
+              <a class="features__buy-btn" href=""></a>
+              <svg></svg>
+
+            </div>
+          </div>
+
+        </div>
       </div>
+
 
       <div class="features-video">
 
-        <div class="features-video__type">
-
-          <h4>Процесс производства</h4>
-
-          <img src="img/video-mobile@1x.jpg">
-
-
-          <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-
-          <a class="btn features-video__btn">Сделать заказ</a>
-
+        <div class="features-video__clip">
+          <button class="features-video__clip-play">
+            <img class="features-video__clip-play-img" src="" alt="">
+          </button>
         </div>
+
+        <h4 class="features-video__title">Процесс производства</h4>
+
+        <p class="features-video__intro">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+
+         <a class="features-video__btn btn">Сделать заказ</a>
+
 
       </div>
 
@@ -131,30 +193,30 @@
 
     <div class="container">
 
-      <div class="page-footer__wrapper">
+      <div class="page-footer__tablet">
+        <a class="page-footer__logo" href=""><img src="img/logo-footer.png" alt=""></a>
 
-        <p class="page-footer__social">
+        <div class="page-footer__social">
 
-          <span class="social-links">
+          <div class="social-links">
 
-        <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-        <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
+            <a class="social-link social-link--in" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social-link social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social-link social-link--tv" href="https://www.instagram.com/htmlacademy">Мы в Инстаграмме</a>
 
-      </span>
+          </div>
 
-        </p>
+        </div>
 
-        <p class="page-footer__copyright">
+        <div class="page-footer__copyright">
 
           <span>Разработано:</span>
           <img src="img/logo-htmlacademy.svg" alt="">
 
-        </p>
+        </div>
 
 
       </div>
-
     </div>
 
   </footer>
