@@ -1,0 +1,142 @@
+.about-us {
+  .container();
+
+  .about-us__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-us__item {
+    position: relative;
+    margin-top: 83px;
+    font-size: 17px;
+    color: #000000;
+    font-weight: 700;
+    line-height: 20px;
+
+    .about-us__item-image {
+
+      &--style-image {
+        content: "";
+        position: absolute;
+        top: -53px;
+        left: 0;
+        height: 27px;
+        width: 47px;
+      }
+
+      &--eco-image {
+        content: "";
+        position: absolute;
+        top: -53px;
+        left: 8px;
+        height: 38px;
+        width: 33px;
+      }
+
+      &--like-image {
+        content: "";
+        position: absolute;
+        top: -48px;
+        left: 8px;
+        height: 27px;
+        width: 34px;
+      }
+
+      &--with-love-image {
+        content: "";
+        position: absolute;
+        top: -53px;
+        left: 3px;
+        height: 34px;
+        width: 34px;
+      }
+
+      &--support-image {
+        content: "";
+        position: absolute;
+        top: -48px;
+        left: -6px;
+        height: 23px;
+        width: 55px;
+      }
+
+      &--gift-image {
+        content: "";
+        position: absolute;
+        top: -53px;
+        left: 3px;
+        height: 32px;
+        width: 33px;
+      }
+    }
+  }
+
+
+
+  .about-us__item:first-child {
+    margin-top: 87px;
+  }
+}
+
+@media @tablet-widths {
+  .about-us {
+
+    .about-us__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .about-us__header {
+      margin-bottom: -5px;
+    }
+
+    .about-us__item:first-child {
+      margin-top: 107px;
+    }
+
+    .about-us__item {
+      width: 334px;
+      margin-top: 107px;
+      font-size: 20px;
+      line-height: 24px;
+
+      &--eco {
+        order: -6;
+      }
+
+      &--style {
+        order: -4;
+      }
+
+      &--like {
+        order: -1;
+      }
+      &--with-love {
+        order: -5;
+      }
+
+      &--support {
+        order: -3;
+      }
+    }
+  }
+}
+
+@media @desktop-widths  {
+  .about-us {
+    .about-us__header {
+      margin-left: 170px;
+    }
+
+    .about-us__list {
+      margin-left: 175px;
+    }
+
+    .about-us__item {
+      width: 350px;
+      margin-top: 109
+    }
+  }
+}
