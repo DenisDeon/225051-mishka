@@ -1,0 +1,165 @@
+.reviews {
+  position: relative;
+  .container();
+  padding-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: url(../img/bg-zigzag-line.svg) repeat-x;
+    background-size: contain;
+  }
+
+  .rewiews__text {
+    display: block;
+    line-height: 30px;
+    margin-top: 22px;
+    margin-bottom: 26px;
+  }
+
+  .reviews__auhor-name {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    font-style: normal;
+  }
+
+  .reviews__item-auhor-email {
+    display: block;
+    margin-top: 6px;
+    font-weight: normal;
+    color: #444444;
+    text-decoration: none;
+  }
+
+  .rewiews__wrapper{
+    z-index: 10;
+  }
+
+  .reviews__nav {
+    display: flex;
+    margin-top: 33px;
+    margin-bottom: 39px;
+    font-size: 0;
+  }
+
+  .reviews__nav-item {
+    display: flex;
+    width: 50%;
+    height: 50px;
+    border: 1px solid #ececec
+  }
+
+  .reviews__nav-item:last-child {
+    margin-left: -1px;
+  }
+
+  .reviews__nav-item-image {
+    margin: auto;
+  }
+
+  .reviews__nav-item:hover .reviews__nav-item-image polygon {
+    fill: rgba(0, 0, 0, 0.6);;
+  }
+
+  .reviews__nav-item:active .reviews__nav-item-image polygon {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+
+  .rewiews__bg {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 75px;
+    padding-bottom: 130px;
+    background: #fff url(../img/review@1x.jpg) no-repeat;
+    background-size: 350px 457px;
+
+    @media @retina {
+      background: #fff url(../img/review@2x.jpg);
+    }
+
+    &::after {
+      height: 16px;
+    }
+
+    .reviews__header {
+      order: -1;
+      z-index: 10;
+      margin-left: -4px;
+    }
+
+    .reviews__btn {
+      order: -1;
+      min-width: 171px;
+      margin-left: auto;
+      margin-top: 5px;
+      line-height: 24px;
+    }
+
+    .rewiews__text {
+      z-index: 10;
+      margin-top: 45px;
+      margin-bottom: 55px;
+    }
+
+    .reviews__item-auhor-email {
+      margin-top: 0;
+    }
+
+    .reviews__nav {
+      width: 180px;
+      margin: 0;
+      margin-top: 6px;
+      margin-left: auto;
+    }
+
+    .reviews__nav-item {
+      border: 0;
+    }
+  }
+}
+
+@media @desktop-widths  {
+  .reviews {
+    padding-top: 72px;
+    padding-bottom: 188px;
+    background-position-x: 50px;
+
+    &::after {
+      height: 23px;
+    }
+
+    .reviews__header {
+      margin-left: 175px;
+    }
+
+    .reviews__btn {
+      max-height: 24px;
+    }
+
+    .rewiews__text {
+      margin-left: 175px;
+      margin-top: 48px;
+      margin-bottom: 35px;
+      width: 780px;
+    }
+
+    .reviews__nav {
+      margin-right: -2px;
+    }
+
+    .rewiews__wrapper {
+      margin-left: 175px;
+    }
+  }
+}
